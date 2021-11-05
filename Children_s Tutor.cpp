@@ -8,6 +8,7 @@ void mainMenu();
 void optionMathematics();
 void optionGeometry();
 void optionAlphabet();
+
 //mathematics method
 void optionCounting();
 void Zero();
@@ -30,6 +31,7 @@ void division(int m, int n);
 void Rectangle();
 void Triangle();
 void Circle();
+
 //alphabet learning methods
 void Capital_A();
 void Capital_B();
@@ -515,10 +517,10 @@ void sound_number(int i)
         PlaySound(TEXT("audio/0.wav"),NULL,SND_SYNC);
     }
 }
-
+//Summation
 void sum(int m,int n)
 {
-    setcolor(1);
+    setcolor(WHITE);
     settextstyle(DEFAULT_FONT,HORIZ_DIR,4);
     outtextxy(150,30,"SUMMATION");
     setcolor(15);
@@ -581,7 +583,7 @@ void sum(int m,int n)
 
 void subtract(int m,int n)
 {
-    setcolor(1);
+    setcolor(WHITE);
     settextstyle(DEFAULT_FONT,HORIZ_DIR,4);
     outtextxy(140,30,"SUBTRACTION");
     setcolor(15);
@@ -653,7 +655,7 @@ void subtract(int m,int n)
 }
 void subNotPossible()
 {
-    setcolor(1);
+    setcolor(WHITE);
     settextstyle(DEFAULT_FONT,HORIZ_DIR,4);
     outtextxy(140,30,"SUBTRACTION");
     settextstyle(DEFAULT_FONT,HORIZ_DIR,3);
@@ -665,7 +667,7 @@ void subNotPossible()
 //multiplication
 void mul(int m,int n)
 {
-    setcolor(1);
+    setcolor(WHITE);
     settextstyle(DEFAULT_FONT,HORIZ_DIR,4);
     outtextxy(100,30,"MULTIPLICATION");
     setcolor(15);
@@ -727,7 +729,7 @@ void mul(int m,int n)
 //division
 void division(int m,int n)
 {
-    setcolor(1);
+    setcolor(WHITE);
     settextstyle(DEFAULT_FONT,HORIZ_DIR,4);
     outtextxy(100,30,"DIVISION");
     setcolor(15);
@@ -786,7 +788,7 @@ void division(int m,int n)
 
 void divNotPossible()
 {
-    setcolor(1);
+    setcolor(WHITE);
     settextstyle(DEFAULT_FONT,HORIZ_DIR,4);
     outtextxy(140,30,"DIVISION");
     settextstyle(DEFAULT_FONT,HORIZ_DIR,3);
@@ -1302,7 +1304,7 @@ void Capital_J()
     line(280,298,315,298);
     line(280,302,315,302);
     circle(319,300,4);
-    setfillstyle(SOLID_FILL,GREEN);
+    setfillstyle(SOLID_FILL,BROWN);
     floodfill(190,290,WHITE);
     setfillstyle(SOLID_FILL,6);
     floodfill(319,300,WHITE);
@@ -2700,6 +2702,61 @@ int main()
                 {
                     cleardevice();
                     Capital_O();
+                }
+                  else if(d=='p')
+                {
+                    cleardevice();
+                    Capital_P();
+                }
+                else if(d=='q')
+                {
+                    cleardevice();
+                    Capital_Q();
+                }
+                else if(d=='r')
+                {
+                    cleardevice();
+                    Capital_R();
+                }
+                else if(d=='s')
+                {
+                    cleardevice();
+                    Capital_S();
+                }
+                else if(d=='t')
+                {
+                    cleardevice();
+                    Capital_T();
+                }
+                else if(d=='u')
+                {
+                    cleardevice();
+                    Capital_U();
+                }
+                else if(d=='v')
+                {
+                    cleardevice();
+                    Capital_V();
+                }
+                else if(d=='w')
+                {
+                    cleardevice();
+                    Capital_W();
+                }
+                else if(d=='x')
+                {
+                    cleardevice();
+                    Capital_X();
+                }
+                else if(d=='y')
+                {
+                    cleardevice();
+                    Capital_Y();
+                }
+                else if(d=='z')
+                {
+                    cleardevice();
+                    Capital_Z();
                 }
             }
         }
